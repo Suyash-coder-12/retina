@@ -57,7 +57,7 @@ jobs:
       - run: go version
 
       - name: Az CLI login
-        uses: azure/login@v2
+        uses: azure/login@v3
         with:
           client-id: ${{ secrets.azure-client-id }}
           tenant-id: ${{ secrets.azure-tenant-id }}
